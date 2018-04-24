@@ -39,16 +39,16 @@ public class StringComparatorControllerTests {
     @Test
     public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
 
-        this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("Hello, World!"));
+        this.mockMvc.perform(get("/comparator")).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$").value(0));
     }
 
     @Test
     public void paramGreetingShouldReturnTailoredMessage() throws Exception {
 
-        this.mockMvc.perform(get("/greeting").param("name", "Spring Community"))
+        this.mockMvc.perform(get("/comparator").param("val1", "a").param("val2","b"))
                 .andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
+                .andExpect(jsonPath("$").value(-1));
     }
 
 }

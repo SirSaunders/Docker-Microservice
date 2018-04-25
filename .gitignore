@@ -92,3 +92,13 @@ fabric.properties
 
 
 # End of https://www.gitignore.io/api/intellij
+
+\.DS_Store
+
+Docker-Sorter/\.idea/libraries/
+
+Docker-CompareTo/\.idea/workspace\.xml
+
+Docker-Sorter/\.idea/workspace\.xml
+
+Docker-Sorter/\.idea/uiDesigner\.xml

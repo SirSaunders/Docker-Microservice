@@ -1,6 +1,10 @@
 version: "3"
 services:
- test6:
-    build: ./SpringApp 
+ comparator:
+    build: ./ComparatorService
     ports:
       - "8080:8080"
+  comparator:
+    build: ./Docker-Sorter
+    ports:
+          - "8080:8000"

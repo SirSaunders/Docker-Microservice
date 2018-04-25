@@ -44,8 +44,7 @@ hs_err_pid*
 .idea/**/uiDesigner.xml
 
 # Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
+
 
 # CMake
 cmake-build-debug/

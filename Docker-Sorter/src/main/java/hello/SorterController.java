@@ -40,7 +40,7 @@ public class SorterController {
     }
 
     private int networkRequest(String val1, String val2) throws IOException {
-        URL url = new URL("comparator:8080?val1=" + val1 + "&val2=" + val2);
+        URL url = new URL("http://comparator:8080/comparator?val1=" + val1 + "&val2=" + val2);
         URLConnection connection = url.openConnection();
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(connection.getInputStream()));

@@ -2,8 +2,8 @@ version: "3"
 services:
   comparator:
     build: ./ComparatorService
-    ports:
-      - "8080:8080"
+#    ports:
+#      - "8080:8080"  # remove comments to make ports accessible outside of this docker network
   sorter:
     build: ./Docker-Sorter
     ports:

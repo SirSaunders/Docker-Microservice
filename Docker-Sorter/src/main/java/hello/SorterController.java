@@ -54,4 +54,9 @@ public class SorterController {
 
         return result;
     }
+
+    @RequestMapping("/")
+    public String hello()  {
+        return "hello, I am sorter";
+    }
 }

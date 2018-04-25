@@ -1,10 +1,10 @@
 version: "3"
 services:
- comparator:
+  comparator:
     build: ./ComparatorService
     ports:
       - "8080:8080"
-  comparator:
+  sorter:
     build: ./Docker-Sorter
     ports:
-          - "8080:8000"
+          - "8000:8080"

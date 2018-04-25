@@ -11,4 +11,9 @@ public class ComparatorController {
     public int compare(@RequestParam(value="val1", defaultValue="World") String val1, @RequestParam(value="val2", defaultValue="World") String val2) {
         return val1.compareTo(val2);
     }
+
+    @RequestMapping("/")
+    public String hello()  {
+        return "hello, I am comparator";
+    }
 }

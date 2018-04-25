@@ -51,4 +51,9 @@ public class SorterControllerTests {
                 .andExpect(jsonPath("$.content").value("Hello, Spring Community!"));
     }
 
+    @RequestMapping("/")
+    public String hello()  {
+        return "hello, I am sorter";
+    }
+
 }
